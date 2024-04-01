@@ -18,7 +18,7 @@ const MovieApp = () => {
    const getMovieData = async (searchString) => {
     
         const response = await axios.get(
-            `http://www.omdbapi.com/?s=${searchString}&apikey=${api_key}`
+            `https://www.omdbapi.com/?s=${searchString}&apikey=${api_key}`
         );
         console.log(response)
         updateMovieList(response.data.Search)
