@@ -16,7 +16,7 @@ const MoreInfo = (props) => {
         <div className="more-info-header">
             <img className="movie-info-img" src={selectedMovie?.Poster}></img>
             <div className="info-column">
-            <div className="movie-name-info">Movie Name: {selectedMovie?.Title}</div>
+            <div className="movie-name-info">Movie Name: {selectedMovie?.Title}</div> 
             <div className="movie-more-info">Rating: <span>{selectedMovie?.imdbRating}</span></div>
             <div className="movie-more-info">Language: <span>{selectedMovie?.Language}</span></div>
             <div className="movie-more-info">Genre: <span>{selectedMovie?.Genre}</span></div>
