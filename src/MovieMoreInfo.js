@@ -7,7 +7,7 @@ const MoreInfo = (props) => {
     const {movieInfo} = props;
     let api_key = "a1f937e9";
     useEffect(() => {
-        axois.get(`http://www.omdbapi.com/?i=${movieInfo.imdbID}&apikey=${api_key}`)//CALLING API TO GET THE INFO
+        axois.get(`https://www.omdbapi.com/?i=${movieInfo.imdbID}&apikey=${api_key}`)//CALLING API TO GET THE INFO
     //saving it to state:
     .then((response) => setSelectedMovie(response.data))
 }, [movieInfo]) 
